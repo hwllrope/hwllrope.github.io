@@ -1,0 +1,72 @@
+.container {
+    border: 3px solid rosybrown;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap; /*換行*/
+}
+
+[class^=col-]{
+    padding: 10px;
+    border: 1px solid skyblue;
+}
+
+[class^=col-].no-gutter{
+    padding: 0;
+}
+
+@mixin generate-cols($name){
+    @for $number from 1 through 12{
+        @if $name == no-label {
+            .col-#{$number}{
+                width: calc(100% * #{$number} / 12);
+            }
+        }
+        @else{
+            .col-#{$name}-#{$number}{
+                width: calc(100% * #{$number} / 12);
+            }
+        }
+        
+    }
+}
+
+@mixin media-query-break-point($name, $container-width, $min-width, $max-width){
+    @if $min-width == 0{
+        @media screen and (max-width: $max-width - 0.01px){
+            .container {
+                width: $container-width;
+            }
+            @include generate-cols($name);
+        }
+    }
+    @else if $max-width == 10000px{
+        @media screen and (min-width: $min-width){
+            .container {
+                width: $container-width;
+            }
+            @include generate-cols($name);
+        }
+    }
+    @else{
+        @media screen and (min-width: $min-width) and (max-width: $max-width - 0.01px){
+            .container {
+                width: $container-width;
+            }
+            @include generate-cols($name);
+        }
+    }
+}
+
+@include generate-cols(no-label);
+@include media-query-break-point(xs, 540px, 0px, 576px);
+@include media-query-break-point(sm, 540px, 576px, 768px);
+@include media-query-break-point(md, 540px, 768px, 992px);
+@include media-query-break-point(lg, 540px, 992px, 1200px);
+@include media-query-break-point(xl, 540px, 1200px, 1000px);

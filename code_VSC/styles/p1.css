@@ -1,0 +1,204 @@
+body{
+    background-color: rgb(249, 241, 229);
+}
+
+#formtitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+}
+
+nav{
+    margin: 0 auto;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    background-color: lightgrey;
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    border: 5px double white;
+    width: 60%;
+    height: 40%;
+    display: table;
+    opacity: 0.85;
+}
+
+.health {
+    width: 100%;
+    background-image: url(../image/健康背景1.jpg);
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.health2 {
+    width: 100%;
+    background-image: url(../image/健康背景2.jpg);
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#hr{
+    height: 2px;
+    background-color: black;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+#formtext{
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+
+#word {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 6%;
+    animation-name: oxxo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes oxxo {
+    from {
+        margin-top: 0%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 3%;
+        opacity: 1;
+    }
+}
+
+#word2 {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    animation-name: oxxo2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: calc();
+}
+
+@keyframes oxxo2 {
+    from {
+        margin-top: 0%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 5%;
+        opacity: 1;
+    }
+}
+
+#word3 {
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 10%;
+    animation-name: oxxo3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: calc();
+}
+
+@keyframes oxxo3 {
+    from {
+        margin-top: 18%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 23%;
+        opacity: 1;
+    }
+}
+
+#word4 {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    animation-name: oxxo4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: calc();
+}
+
+@keyframes oxxo4 {
+    from {
+        margin-top: 0%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 5%;
+        opacity: 1;
+    }
+}
+
+#word5 {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 10%;
+    animation-name: oxxo5;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: calc();
+}
+
+@keyframes oxxo5 {
+    from {
+        margin-top: 0%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 3%;
+        opacity: 1;
+    }
+}
+
+#formforhealth{
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 50px;
+    font-size: large;
+    background-color: peachpuff;
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    border: 5px double white;
+    width: 60%;
+    height: 50%;
+    display: table;
+    opacity: 0.85;
+}
+
+#formforhealth2{
+    margin: 0 auto;
+    font-size: large;
+    background-color: rgb(205, 239, 205);
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    border: 5px double white;
+    width: 60%;
+    height: 50%;
+    display: table;
+    opacity: 0.85;
+}
+
+#formforhealth3{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: large;
+    background-color: lightblue;
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    border: 5px double white;
+    width: 60%;
+    height: 40%;
+    display: table;
+    opacity: 0.85;
+}

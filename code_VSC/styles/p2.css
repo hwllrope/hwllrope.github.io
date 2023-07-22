@@ -1,0 +1,37 @@
+hr {
+    background-color: black;
+}
+
+.video {
+    margin-top: 5%;
+    height: 300px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#basic_introduce1{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 50px;
+    float: left;
+}
+
+#basic_introduce2{
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 50px;
+    float: left;
+}
+
+#theend_p2 {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 35%;
+    clear: both;
+}
