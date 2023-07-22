@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://hwll2022.surge.sh/sitemap.txt
